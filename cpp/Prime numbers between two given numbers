@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+int PrintPrime(int x, int y);
+int PrintPrime(int x, int y)
+{
+    int c=0,i,j;
+    for(i=x;i<=;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            if(i%j==0)
+            {
+                c++;
+            }
+            else
+            {
+                continue;
+            }
+        }
+        if(c==2)
+        {
+            cout<<i<<"/n";
+        }
+    }
+    //return ;
+}
+
+int main()
+{
+    int T,m,n;
+    cin>>T;
+    while(T>0)
+    {
+        cin>>m;
+        cin>>n;
+        PrintPrime(m,n);
+        T--;
+        cout<<"\n";
+    }
+
+    return 0;
+}
